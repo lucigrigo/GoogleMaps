@@ -37,27 +37,28 @@
             this.treeView1.Dock = System.Windows.Forms.DockStyle.Left;
             this.treeView1.Location = new System.Drawing.Point(0, 0);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(325, 475);
+            this.treeView1.Size = new System.Drawing.Size(325, 461);
             this.treeView1.TabIndex = 0;
+            this.treeView1.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
             // 
             // webBrowser1
             // 
-            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.webBrowser1.Location = new System.Drawing.Point(331, 0);
+            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webBrowser1.Location = new System.Drawing.Point(325, 0);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(492, 475);
+            this.webBrowser1.Size = new System.Drawing.Size(859, 461);
             this.webBrowser1.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(823, 475);
+            this.ClientSize = new System.Drawing.Size(1184, 461);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.treeView1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "GoogleMaps";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
